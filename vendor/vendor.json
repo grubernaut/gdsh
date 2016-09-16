@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "J1irW4tyCsDzaVDu6olx5fG2Nrs=",
+			"path": "gopkg.in/urfave/cli.v2",
+			"revision": "c72728f42438425ffcd487986936357e17ebba3f",
+			"revisionTime": "2016-08-31T17:44:05Z"
+		}
+	],
+	"rootPath": "github.com/grubernaut/gdsh"
+}
