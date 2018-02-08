@@ -41,7 +41,9 @@ func (e *ExecOpts) Execute() error {
 func (e *ExecOpts) buildCmdOpts(elem string) []string {
 	var opts []string
 	if e.RemoteCommandOpts != "" {
-		opts = append(opts, e.RemoteCommandOpts)
+		// Split remote command opts based on <space> to successfully be sent to cmd.Exec()
+		remoteOpts := strings.Split(e.RemoteCommandOpts, " ")
+		opts = append(opts, remoteOpts...)
 	}
 	// split machine name and username
 	if strings.Contains(elem, "@") {
